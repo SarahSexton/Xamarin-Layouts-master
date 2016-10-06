@@ -114,6 +114,13 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\BathroomIcon.png" />
+    <BundleResource Include="Resources\EmergencyIcon.png" />
+    <BundleResource Include="Resources\MedicalIcon.png" />
+    <BundleResource Include="Resources\OtherIcon.png" />
+    <BundleResource Include="Resources\PainIcon.png" />
+    <BundleResource Include="Resources\WaterIcon.png" />
+    <BundleResource Include="Resources\HelpIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -136,6 +143,18 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="FFImageLoading.Platform">
+      <HintPath>..\..\dlls\FFImageLoading.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Forms.Touch">
+      <HintPath>..\..\dlls\FFImageLoading.Forms.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Forms">
+      <HintPath>..\..\dlls\FFImageLoading.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading">
+      <HintPath>..\..\dlls\FFImageLoading.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="..\Xamarin_Layouts\Xamarin_Layouts.projitems" Label="Shared" Condition="Exists('..\Xamarin_Layouts\Xamarin_Layouts.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
